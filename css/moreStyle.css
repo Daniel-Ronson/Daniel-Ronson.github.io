@@ -87,3 +87,17 @@ margin-bottom: 0px;
   .control-group{
     background-color: rgb(230, 238, 250);
   }
+
+  @media only screen and (max-width: 475px) {
+  .profile {
+      height: 300px;
+      width: 325.25px;
+    }
+  }
+
+  @media only screen and (max-width: 370px) {
+    .profile {
+        height: 125px;;
+        width: 175.25px;
+      }
+    }
