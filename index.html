@@ -64,6 +64,15 @@
                 </div>
                 <!-- Portfolio Grid Items-->
                 <div class="row">
+                    <!-- Portfolio Item 0-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="project-title">Connect Four AI</i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/c4_3.png" alt="connectfour.live" />
+                        </div>
+                    </div>                    
                     <!-- Portfolio Item 1-->
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
@@ -83,14 +92,14 @@
                         </div>
                     </div>
                     <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
+                    <!-- <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="project-title">Country Compare</i></div>
                             </div>
                             <img class="img-fluid" src="assets/img/country.jpg" alt="MERN web app" />
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Portfolio Item 4-->
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
@@ -107,7 +116,7 @@
         <section class=" about-section page-section text-white mb-0 " id="about">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white ">About</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-white ">About Me</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -116,8 +125,8 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ml-auto"><p class="lead">I am a computer science student at CSUF. I enjoy problem solving with code and learning new technology to further my goals.  </p></div>
-                    <div class="col-lg-4 mr-auto"><p class="lead">I have a passion for software development and I strive to build extensible applications. For business inquires please contact me.</p></div>
+                    <div class="col-lg-4 ml-auto"><p class="lead">I am a Software Engineer and enjoy reading, learning, and building applications. I build high throughput, available systems, utilizing Cloud infrastructure.</p></div>
+                    <div class="col-lg-4 mr-auto"><p class="lead">For business inquires please contact me via LinkedIn.</p></div>
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
@@ -144,7 +153,60 @@
         <div class="scroll-to-top d-lg-none position-fixed">
             <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
         </div>
-        <!-- Portfolio Modals--><!-- Portfolio Modal 1-->
+        <!-- Portfolio Modals--><!-- Portfolio Modal 0-->
+        <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog" aria-labelledby="portfolioModal0Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Connect Four AI</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image--><img class="img-headline rounded mb-2" src="assets/img/C4_2.PNG" alt="" /><!-- Portfolio Modal - Text-->
+                                     <button class="big-button mb-4" onclick= "window.open('https://connectfour.live','_blank')">Play Game</button>
+                                    <div class="text-left">
+                                    <p class="mission-statement mb-0">Overview:</p>
+                                    <p class="mb-2">
+                                        <ul>
+                                            <li>Play Connect Four against AI algorithm</li>
+                                            <li>Online multiplayer mode using web socket connectivity</li>
+                                        </ul> 
+                                   </p>
+                                    <p class="mission-statement mb-0">Technology</p>
+                                    <ul>
+                                        <li>Cloud hosted - Google Cloud Run</li>
+                                        <li>Python backend to query AI algorithm</li>
+                                        <li>Firebase for online mulitplayer</li>
+                                        <li>Secure certificate validation</li>
+                                        <li><a class="outlink" href="https://github.com/Daniel-Ronson/Connect-Four-AI" target="_blank">Source Code</a></li>
+                                    </ul>
+                                    <p class="mission-statement mb-0">Artifical Intelligence Algorithm</p>    
+                                    <ul>
+                                    <li>
+                                        AI programmed using alpha beta search with variable depth cutoff. As an evaluation
+                                        function, the state of the board is scored at every possible position. A potential move is evaluated
+                                        depending how many pieces are adjacent, and how close the opponent is to conencting four.
+                                    </li>                         
+                                    </div>  
+                                    <button class="btn-port btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 1-->
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
@@ -163,7 +225,7 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-2" src="assets/img/out-2.png" alt="" /><!-- Portfolio Modal - Text-->
+                                    <!-- Portfolio Modal - Image--><img class="img-headline rounded mb-2" src="assets/img/out-2.png" alt="" /><!-- Portfolio Modal - Text-->
                                     <!--  <button class="big-button mb-4" onclick= "window.open('http://outrightnews.net','_blank')">View the live website</button> -->
                                     <div class="text-left">
                                     <p class="mission-statement mb-0">Overview:</p>
@@ -214,7 +276,7 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-2" src="assets/img/microservices.png" alt="" /><!-- Portfolio Modal - Text-->
+                                    <!-- Portfolio Modal - Image--><img class="img-headline rounded mb-2" src="assets/img/microservices.png" alt="" /><!-- Portfolio Modal - Text-->
                                     <button class="big-button mb-4" onclick= "window.open('https://github.com/Daniel-Ronson/Music-Playlist-Builder-API#readme','_blank')">View the full write up</button>
                                     <div class="text-left">
                                     <p class="mission-statement mb-0">Overview:</p>
@@ -255,7 +317,7 @@
             </div>
         </div>
         <!-- Portfolio Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+        <!-- <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
@@ -265,16 +327,14 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
                                     <h2 class="portfolio-modal-title text-secondary text-uppercase mb-4">Country Compare</h2>
                                     <h3 class="text-center">A work in progress</h3>
-                                    <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-2" src="assets/img/country-2.jpg" alt="" /><!-- Portfolio Modal - Text-->
+                                    <img class="img-headline rounded mb-2" src="assets/img/country-2.jpg" alt="" />
                                     <div class="text-left">
                                     <p class="mission-statement mb-0">Overview:</p>
                                     <ul>
@@ -311,7 +371,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Portfolio Modal 4-->
         <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
@@ -332,7 +392,7 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-2 border border-primary" src="assets/img/ftpProtocol.png" alt="" /><!-- Portfolio Modal - Text-->
+                                    <!-- Portfolio Modal - Image--><img class="img-headline rounded mb-2 border border-primary" src="assets/img/ftpProtocol.png" alt="" /><!-- Portfolio Modal - Text-->
                                     <button class="big-button mb-4" onclick= "window.open('https://github.com/Daniel-Ronson/File-Transfer-Protocol','_blank')">Source Code</button>
 
                                     <div class="text-left">
@@ -379,8 +439,6 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
         <!-- Third party plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Contact form JS-->
-        <script src="assets/mail/jqBootstrapValidation.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
 

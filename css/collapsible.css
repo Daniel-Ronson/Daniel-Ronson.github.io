@@ -45,8 +45,9 @@
   .outlink:active{
     color: rgb(213, 213, 255);
   }
+
   .big-button{
-    width:70%;
+    width:300px;
     background-color:#1abc9c;
     color:white;
     padding: .5rem 1rem;
@@ -54,6 +55,12 @@
     text-decoration: none;
     border: none;
   }
+
+  @media only screen and (max-width: 560px) {
+    .big-button {
+      width:200px;
+      }
+    }
   .big-button:hover{
     transition: 10ms;
     background-color: rgb(73, 236, 204);
