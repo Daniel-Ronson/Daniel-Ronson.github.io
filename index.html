@@ -75,20 +75,20 @@
                     </div>                    
                     <!-- Portfolio Item 1-->
                     <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="project-title">Copy with Context</i></div>
+                            </div>
+                            <img class="img-fluid" src="https://raw.githubusercontent.com/Daniel-Ronson/copy-with-context/main/public/gifs/copy-demo.gif" alt="VSCode Extension" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="project-title">News Feed</i></div>
                             </div>
                             <img class="img-fluid" src="assets/img/out-3.png" alt="outrightnews.net" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="project-title">Playlist Maker</i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/microservices.png" alt="Flask web app" />
                         </div>
                     </div>
                     <!-- Portfolio Item 3-->
@@ -107,6 +107,15 @@
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="project-title">File Transfer Server</i></div>
                             </div>
                             <img class="img-fluid" src="assets/img/ftpProtocol.png" alt="MERN web app" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 5-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="project-title">Playlist Maker</i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/microservices.png" alt="Flask web app" />
                         </div>
                     </div>
                 </div>
@@ -400,7 +409,7 @@
                                     <ul>
                                         <li>An implementation of the FTP protocol</li>
                                         <li>Transfer files between Client and Server</li>
-                                        <li>C`lient can use commands on the server.. GET, POST, List, Quit</li>
+                                        <li>Client can use commands on the server.. GET, POST, List, Quit</li>
                                         <li>Parallel control and data connections</li>
                                     </ul>
                                     <p class="mission-statement mb-0">Technology:</p>
@@ -428,6 +437,60 @@
                                 
                             </div>
 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Copy with Context</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image--><img class="img-headline rounded mb-2" src="https://raw.githubusercontent.com/Daniel-Ronson/copy-with-context/main/public/gifs/copy-demo.gif" alt="VSCode Extension Demo" /><!-- Portfolio Modal - Text-->
+                                    <button class="big-button mb-4" onclick= "window.open('https://marketplace.visualstudio.com/items?itemName=copy-context.copy-with-context','_blank')">View  on the Marketplace</button>
+                                    <div class="text-left">
+                                        <p class="mission-statement mb-0">Overview:</p>
+                                        <p class="mb-2">
+                                            Copy with Context is a VS Code extension that transforms multiple files and folders into markdown
+                                            format with the file names and relative paths. It's designed specifically for developers working with AI
+                                            assistants like ChatGPT, streamlining the process of sharing code with the chatbots.
+                                        </p>
+                                        <p class="mission-statement mb-0">Impact:</p>    
+                                        <ul>
+                                            <li>Over 30+ downloads</li>
+                                            <li>Fully open source: <a class="outlink" href="https://github.com/Daniel-Ronson/copy-with-context" target="_blank">Check out the source Code!</a></li>
+                                            <li>Saves time for developers by automating the tedious process of formatting code for AI tools</li>
+                                        </ul>   
+                                        <p class="mission-statement mb-0">Technology:</p>
+                                        <ul> <li>Built with TypeScript and VS Code Extension API</li>
+                                        <li>Node.js for file system operations</li>
+                                    </ul>
+                                    <p class="mission-statement mb-0">Features:</p>    
+                                    <ul>
+                                        <li>Multi-file and folder select for copy/transformation</li>
+                                        <li>Smart filtering of binary files, environment variables, and large files</li>
+                                        <li>Quickpicker UI for excluding specific files/folders from being copied by the extension</li>
+                                        <li>LLM-friendly formatting of all selected files along with file names and relative paths</li>
+                                    </ul>                      
+                                    </div>  
+                                    <button class="btn-port btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

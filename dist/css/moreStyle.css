@@ -87,3 +87,26 @@ margin-bottom: 0px;
   .control-group{
     background-color: rgb(230, 238, 250);
   }
+
+  @media only screen and (max-width: 370px) {
+    .profile {
+        height: 125px;;
+        width: 175.25px;
+      }
+    }
+
+/* Styling for outlinks to make them more attractive */
+.outlink {
+  color: #1abc9c; /* Primary color used in the theme */
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid #1abc9c;
+  padding-bottom: 2px;
+  transition: all 0.2s ease;
+}
+
+.outlink:hover {
+  color: #16a085; /* Slightly darker shade for hover effect */
+  border-bottom: 2px solid #16a085;
+  text-decoration: none;
+}
